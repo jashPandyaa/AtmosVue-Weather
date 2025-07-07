@@ -21,7 +21,5 @@ A sleek weather application built with React and Material UI that delivers real-
 - **Icons**: React Icons + MUI Icons
 - **Deployment**: Vercel/Netlify
 
-## 🚀 Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/jashPandyaa/AtmosVue-Weather.git
+## Developer
+Jash Pandya(https://github.com/jashPandyaa)
