@@ -1,5 +1,5 @@
 # 🌤️ AtmosVue Weather - Modern Weather Dashboard
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) 
 [![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react)](https://react.dev/)
 [![Material UI](https://img.shields.io/badge/Material%20UI-5.14.20-007FFF?logo=mui)](https://mui.com/)
 [![OpenWeatherMap API](https://img.shields.io/badge/OpenWeatherMap-API-green)](https://openweathermap.org/api)
