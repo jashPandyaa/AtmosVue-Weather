@@ -1,0 +1,209 @@
+:root {
+    --primary: #3f51b5;
+    --secondary: #ff4081;
+    --text-dark: #333;
+    --text-light: #666;
+    --text-lighter: #888;
+    --border: #e0e0e0;
+    --background: #f5f7fa;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --error: #f44336;
+}
+
+.weather-app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.weather-app-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.app-title {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--primary);
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.unit-toggle {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.unit-toggle button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.unit-toggle button:hover {
+    background-color: var(--secondary);
+}
+
+.last-updated {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+    border-top: 1px solid var(--border);
+    color: var(--text-light);
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.react-icon {
+    color: var(--primary);
+    vertical-align: middle;
+    font-size: 1.1em;
+    margin-left: 5px;
+}
+
+.author-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 5px;
+    transition: color 0.2s;
+}
+
+.author-link:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+    border-top: 1px solid rgba(63, 81, 181, 0.1);
+    color: var(--text-light);
+    width: 100%;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.author-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    letter-spacing: 0.5px; 
+    position: relative;
+    padding: 0 2px;
+}
+
+.author-link:hover {
+    color: var(--secondary);
+}
+
+.author-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--secondary);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.author-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.react-icon {
+    color: var(--primary);
+    font-size: 1.1em;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 25px 0;
+    }
+    
+    .footer-links {
+        gap: 20px;
+    }
+    
+    .footer-links a {
+        width: 36px;
+        height: 36px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 2rem;
+    }
+    
+    .unit-toggle {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-app-container {
+        padding: 15px;
+    }
+    
+    .app-title {
+        font-size: 1.8rem;
+    }
+}

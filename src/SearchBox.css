@@ -1,0 +1,18 @@
+.searchbox {
+    text-align: center;
+    margin: 20px 0 30px;
+    width: 100%;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.error-message {
+    color: var(--error);
+    margin-top: 10px;
+    font-size: 0.9rem;
+}

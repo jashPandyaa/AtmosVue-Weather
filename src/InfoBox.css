@@ -1,0 +1,40 @@
+.InfoBox {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.weather-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.weather-item svg {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+@media (max-width: 600px) {
+    .weather-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .weather-item {
+        font-size: 0.9rem;
+    }
+}
