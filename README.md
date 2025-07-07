@@ -22,4 +22,4 @@ A sleek weather application built with React and Material UI that delivers real-
 - **Deployment**: Vercel/Netlify
 
 ## Developer
-[![Jash Pandya](https://github.com/jashPandyaa)]
+[Jash Pandya](https://github.com/jashPandyaa)
